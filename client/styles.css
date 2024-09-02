@@ -62,3 +62,11 @@ h1 {
     cursor: pointer;
 }
 
+.avatar-element {
+    text-align: center;
+}
+
+.avatar-img {
+    width: 40%; 
+    height: auto; 
+  }

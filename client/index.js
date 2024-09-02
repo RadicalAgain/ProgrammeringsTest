@@ -48,19 +48,23 @@ Creates a row of user information and appends it to the existing table tableBody
 Parameters: user, tableBody, user is an object with first name, last name and tableBody is the table
 */
 function appendUserToTable(user, tableBody) {
+    const container = document.createElement('div');
 
     const row = document.createElement('tr');
-    const firstNameCell = document.createElement('td');
-    firstNameCell.textContent = user.first_name;
-    row.appendChild(firstNameCell);
 
-    const lastNameCell = document.createElement('td');
-    lastNameCell.textContent = user.last_name;
-    row.appendChild(lastNameCell);
+    const avatarElement = document.createElement('p');
+    avatarElement.className = 'avatar-element'; 
+    const avatarImg = document.createElement('img');
+    avatarImg.src = user.avatar;
+    avatarImg.className = 'avatar-img';
+    avatarImg.width = 150;
+    avatarElement.appendChild(avatarImg);
+    container.appendChild(avatarElement);
 
     addRowUserPopupOnClick(row, user);
+    addRowUserPopupOnClick(container,user)
     tableBody.appendChild(row);
-
+    tableBody.appendChild(container);
 }
 
 
