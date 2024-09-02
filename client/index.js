@@ -25,7 +25,6 @@ window.onclick = (e) => {
 //Elements
 const modal = document.querySelector('.userModal');
 const modalBody = document.querySelector('.modalBody');
-const span = document.getElementsByClassName("close")[0];
 
 
 

@@ -1,6 +1,6 @@
 /*
 File for hosting requests to an API   
-(i detta fall är det endast mot en url i browser och inte server därav har jag ingen server fil/directory)
+(i detta fall är det endast mot en url i browser och inte server därav har jag ingen server (backend) fil/directory)
 */
 
 
